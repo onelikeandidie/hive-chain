@@ -1,0 +1,20 @@
+[package]
+name = "hivechain"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "hivechain"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hivechain"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex = "0.4.3"
+crypto-hash = "0.3.4"
+rand = "0.8.4"
+tokio = { version = "1.14.0", features = ["full"] }
